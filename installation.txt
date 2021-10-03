@@ -1,0 +1,40 @@
+py -m venv venv
+venv\Scripts\activate
+
+//Basic django
+pip install django
+django-admin startproject server
+cd server
+py manage.py startapp apis
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+
+//Graphine 
+pip install graphene-django
+pip install django-filter
+
+Open settings.py and in Installed app add these lines
+INSTALLED_APPS = [
+    'apis.apps.ApisConfig',
+    "django.contrib.staticfiles", # Required for GraphiQL
+    "graphene_django"
+]
+
+in urls.py add
+
+from django.urls import path
+from graphene_django.views import GraphQLView
+
+urlpatterns = [
+    # ...
+    path("graphql", GraphQLView.as_view(graphiql=True)),
+]
+
+pip freeze > requirements.txt
+
+pip list
+pip install django-cors-headers
+pip install pillow
