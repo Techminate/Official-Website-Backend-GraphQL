@@ -1,31 +1,130 @@
-//list
-query{
-  allContacts{
-    id
-    name
-    email
-    phone
+//list of all jobs with its tasks
+
+{
+  allJobs {
+    edges {
+      node {
+        id
+        projectName
+        title
+        description
+        requirements
+        deadline
+        tasks {
+          edges {
+            node {
+              id
+              title
+              description
+              bounty
+            }
+          }
+        }
+      }
+    }
   }
 }
 
-//details
-query{
-  detailsContact(id:3){
+
+// details of a job with related tasks
+
+{
+  job(id: "Sm9ic05vZGU6Mg==") {
     id
-    name
-    email
-    phone
+    title
+    projectName
+    description
+    requirements
+    deadline
+    tasks {
+      edges {
+        node {
+          id
+          title
+          description
+          bounty
+        }
+      }
+    }
   }
 }
+
+
+//list of all tasks with related job
+
+{
+  allTasks {
+    edges {
+      node {
+        id
+        title
+        description
+        bounty
+        job {
+          title
+          projectName
+          description
+          requirements
+          deadline
+        }
+      }
+    }
+  }
+}
+
+
+//details of a task with related job
+
+{
+  task(id: "VGFza3NOb2RlOjE=") {
+    id
+    title
+    description
+    bounty
+    job {
+      title
+      projectName
+      description
+      requirements
+      deadline
+    }
+  }
+}
+
 //basic search
-query{
-  searchContact(name:"admin"){
-    id
-    name
-    email
-    phone
+{
+  allJobs(projectName:"Shiopa"){
+    edges{
+      node{
+        title,
+        tasks{
+          edges{
+            node{
+              title,
+              bounty
+            }
+          }
+        }
+      }
+    }
   }
 }
+
+// Seach task by job id
+
+{
+  allTasks(job: "Sm9ic05vZGU6Mg==") {
+    edges {
+      node {
+        id
+        title
+        description
+        bounty
+      }
+    }
+  }
+}
+
 
 //create Contact
 mutation createContact{

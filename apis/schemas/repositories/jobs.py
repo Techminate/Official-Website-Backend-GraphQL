@@ -9,16 +9,13 @@ class JobsType(DjangoObjectType):
         model = Jobs
         fields = ("id", "projectName", "title", "description", "requirements", "deadline")
 
-class JobNode(DjangoObjectType):
+class JobsNode(DjangoObjectType):
     class Meta:
         model = Jobs
-        filter_fields = {
-            'projectName':['exact', 'icontains', 'istartswith'],
-            'title':['exact', 'icontains', 'istartswith']
-        }
+        filter_fields = ['projectName', 'title']
         interfaces = (relay.Node, )
 
-class readData:
+class readJob:
     def getAll():
         return Jobs.objects.all()
     
