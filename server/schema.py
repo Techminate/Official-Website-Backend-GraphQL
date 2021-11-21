@@ -2,12 +2,14 @@ import graphene
 
 # queries
 import apis.schemas.queries.jobs
+import apis.schemas.queries.members
 
 # mutations
 import apis.schemas.mutations.jobs
 
 class Query(
     apis.schemas.queries.jobs.Query,
+    apis.schemas.queries.members.Query,
     graphene.ObjectType):
     # This class will inherit from multiple Queries
     # as we begin to add more apps to our project

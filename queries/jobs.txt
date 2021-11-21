@@ -25,7 +25,6 @@
   }
 }
 
-
 // details of a job with related tasks
 
 {
@@ -49,7 +48,6 @@
   }
 }
 
-
 //list of all tasks with related job
 
 {
@@ -71,7 +69,6 @@
     }
   }
 }
-
 
 //details of a task with related job
 
@@ -124,7 +121,6 @@
     }
   }
 }
-
 
 //create Contact
 mutation createContact{
@@ -183,5 +179,4 @@ query{
     }
   }
 }
-
 

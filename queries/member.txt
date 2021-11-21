@@ -1,0 +1,46 @@
+//all team 
+{
+  allTeam{
+    edges{
+      node{
+        id
+        name
+        memberSet {
+          edges {
+            node {
+              id
+              name
+              role
+              gmail
+              github
+              discord
+              linkedin
+              image
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//all members 
+{
+  allMembers{
+    edges{
+      node{
+        teamId{
+          name
+        }
+        id
+        name
+        role
+        gmail
+        github
+        discord
+        linkedin
+        image
+      }
+    }
+  }
+}
