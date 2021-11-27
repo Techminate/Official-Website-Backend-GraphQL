@@ -1,0 +1,24 @@
+//all portfolio
+
+query{
+  allPortfolio{
+    id
+    category
+    title
+    image
+    link
+  }
+}
+
+
+//single portfolio
+
+query{
+  portfolioByid(id:1){
+    id
+    category
+    title
+    image
+    link
+  }
+}
