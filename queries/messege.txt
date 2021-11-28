@@ -1,0 +1,11 @@
+mutation{
+  createMessege(name:"sazid",email:"sazid@gmail.com",phone:"0180800810",address:"dhaka",messege:"test is ok"){
+    messege{
+      name
+      email
+      address
+      phone
+      messege
+    }
+  }
+}
