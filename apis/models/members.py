@@ -21,7 +21,7 @@ class Member(models.Model):
     is_active = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"Name: {self.name} | Role: {self.role} | Team: {self.Team.name}"
+        return f"Name: {self.name} | Role: {self.role}"
 
     class Meta:
         verbose_name_plural = "Members"
