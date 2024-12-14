@@ -1,911 +1,1331 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <title>Techminate</title>
+    <meta name="description" content="Business, Inspiration, Technologies" />
+    <meta name="keywords" content="Business, Inspiration, Technologies" />
+    <meta name="author" content="Sazid-Ahmed" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#2e2a8f" />
+    <!--website-favicon-->
+    <link href="images/favicon.png" rel="icon" />
+    <!--plugin-css-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/plugin.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- template-style-->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="css/darkmode.css" rel="stylesheet" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .full-image-card img {
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
 
-<head>
-	<meta charset="utf-8" />
-	<title>Techminate</title>
-	<meta name="description" content="Business, Inspiration, Technologies">
-	<meta name="keywords" content="Business, Inspiration, Technologies">
-	<meta name="author" content="Sazid-Ahmed">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="theme-color" content="#2e2a8f">
-	<!--website-favicon-->
-	<link href="images/favicon.png" rel="icon">
-	<!--plugin-css-->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/plugin.min.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-		rel="stylesheet">
-	<!-- template-style-->
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
-	<link href="css/darkmode.css" rel="stylesheet">
-	<style>
-		html {
-			scroll-behavior: smooth;
-		}
-	</style>
-</head>
+  <body>
+    <!--Start Preloader -->
+    <div class="onloadpage" id="page_loader">
+      <div class="pre-content">
+        <div class="logo-pre">
+          <img src="images/favicon.png" alt="Logo" class="img-fluid" />
+        </div>
+        <div class="pre-text- text-radius text-light text-animation bg-b">
+          Techminate
+        </div>
+      </div>
+    </div>
+    <!--End Preloader -->
+    <!--Start Header -->
+    <header class="nav-bg-b main-header navfix fixed-top menu-dark">
+      <div class="container-fluid m-pad">
+        <div class="menu-header">
+          <div class="dsk-logo">
+            <a class="nav-brand" href="index.html">
+              <img
+                style="height: 35px; width: 250px"
+                src="images/white-logo.png"
+                alt="Logo"
+                class="mega-white-logo"
+              />
+              <img
+                style="height: 35px; width: 250px"
+                src="images/logo.png"
+                alt="Logo"
+                class="mega-darks-logo"
+              />
+            </a>
+          </div>
+          <div class="custom-nav" role="navigation">
+            <ul class="nav-list onepge">
+              <li><a href="#home" class="menu-links">Home</a></li>
+              <li><a href="#about" class="menu-links">About</a></li>
+              <li><a href="#why" class="menu-links">Why Choose Us</a></li>
+              <li><a href="#services" class="menu-links">Services</a></li>
+              <li><a href="#portfolio" class="menu-links">Portfolio</a></li>
+              <li><a href="#team" class="menu-links">Team</a></li>
+              <li><a href="#contact" class="menu-links">Contact</a></li>
+            </ul>
+          </div>
+          <div class="mobile-menu2">
+            <ul class="mob-nav2">
+              <li class="navm-">
+                <a class="toggle" href="#"><span></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Mobile Menu-->
+        <nav id="main-nav">
+          <ul class="first-nav">
+            <li><a href="#home" class="menu-links">Home</a></li>
+            <li><a href="#about" class="menu-links">About</a></li>
+            <li><a href="#why" class="menu-links">Why Choose Us</a></li>
+            <li><a href="#services" class="menu-links">Services</a></li>
+            <li><a href="#portfolio" class="menu-links">Portfolio</a></li>
+            <li><a href="#team" class="menu-links">Team</a></li>
+            <li><a href="#contact" class="menu-links">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--End Header -->
 
-<body>
-	<!--Start Preloader -->
-	<div class="onloadpage" id="page_loader">
-		<div class="pre-content">
-			<div class="logo-pre"><img src="images/favicon.png" alt="Logo" class="img-fluid" /></div>
-			<div class="pre-text- text-radius text-light text-animation bg-b">Techminate</div>
-		</div>
-	</div>
-	<!--End Preloader -->
-	<!--Start Header -->
-	<header class="nav-bg-b main-header navfix fixed-top menu-dark">
-		<div class="container-fluid m-pad">
-			<div class="menu-header">
-				<div class="dsk-logo"><a class="nav-brand" href="index.html">
-						<img style="height: 35px; width:250px" src="images/white-logo.png" alt="Logo"
-							class="mega-white-logo" />
-						<img style="height: 35px; width:250px" src="images/logo.png" alt="Logo"
-							class="mega-darks-logo" />
-					</a></div>
-				<div class="custom-nav" role="navigation">
-					<ul class="nav-list onepge">
-						<li><a href="#home" class="menu-links">Home</a></li>
-						<li><a href="#about" class="menu-links">About</a></li>
-						<li><a href="#why" class="menu-links">Why Choose Us</a></li>
-						<li><a href="#services" class="menu-links">Services</a></li>
-						<li><a href="#portfolio" class="menu-links">Portfolio</a></li>
-						<li><a href="#team" class="menu-links">Team</a></li>
-						<li><a href="#contact" class="menu-links">Contact</a></li>
-					</ul>
-				</div>
-				<div class="mobile-menu2">
-					<ul class="mob-nav2">
-						<li class="navm-"> <a class="toggle" href="#"><span></span></a></li>
-					</ul>
-				</div>
-			</div>
-			<!--Mobile Menu-->
-			<nav id="main-nav">
-				<ul class="first-nav">
-					<li><a href="#home" class="menu-links">Home</a></li>
-					<li><a href="#about" class="menu-links">About</a></li>
-					<li><a href="#why" class="menu-links">Why Choose Us</a></li>
-					<li><a href="#services" class="menu-links">Services</a></li>
-					<li><a href="#portfolio" class="menu-links">Portfolio</a></li>
-					<li><a href="#team" class="menu-links">Team</a></li>
-					<li><a href="#contact" class="menu-links">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<!--End Header -->
+    <!--Start Hero-->
+    <section class="hero-card-web bg-gradient12 shape-bg3" id="home">
+      <div class="hero-main-rp container-fluid">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="hero-heading-sec">
+              <h2 class="wow fadeIn" data-wow-delay="0.3s">
+                <span>Web.</span> <span>Mobile.</span> <span>Graphics.</span>
+                <span>Marketing.</span>
+              </h2>
+              <p class="wow fadeIn" data-wow-delay="0.6s">
+                Website and App development solution for transforming and
+                innovating businesses.
+              </p>
+              <a
+                href="#contact"
+                class="btn-main bg-btn lnk wow fadeIn"
+                data-wow-delay="0.8s"
+                >Contact Us <i class="fas fa-chevron-right fa-ani"></i
+                ><span class="circle"></span
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="hero-content-sec wow fadeIn" data-wow-delay="0.8s">
+              <div class="title-hero-oth">
+                <p>
+                  Business Inspiration Technologies<span
+                    >For Smart People And Companies</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="hero-right-scmm">
+              <div
+                class="hero-service-cards wow fadeInRight"
+                data-wow-duration="2s"
+              >
+                <div class="owl-carousel service-card-prb">
+                  <div
+                    class="service-slide card-bg-a"
+                    data-tilt
+                    data-tilt-max="5"
+                    data-tilt-speed="1000"
+                  >
+                    <a href="#">
+                      <div class="service-card-hh">
+                        <div class="image-sr-mm">
+                          <img alt="custom-sport" src="images/service/vr.png" />
+                        </div>
+                        <div class="title-serv-c"><span>VR</span> Solution</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="service-slide card-bg-b"
+                    data-tilt
+                    data-tilt-max="5"
+                    data-tilt-speed="1000"
+                  >
+                    <a href="#">
+                      <div class="service-card-hh">
+                        <div class="image-sr-mm">
+                          <img
+                            alt="custom-sport"
+                            src="images/service/app-develop.png"
+                          />
+                        </div>
+                        <div class="title-serv-c">
+                          <span>Custom</span> App Solution
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="service-slide card-bg-c"
+                    data-tilt
+                    data-tilt-max="5"
+                    data-tilt-speed="1000"
+                  >
+                    <a href="#">
+                      <div class="service-card-hh">
+                        <div class="image-sr-mm">
+                          <img
+                            alt="custom-sport"
+                            src="images/service/startup.png"
+                          />
+                        </div>
+                        <div class="title-serv-c">
+                          <span>Startup</span> Solution
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="service-slide card-bg-d"
+                    data-tilt
+                    data-tilt-max="5"
+                    data-tilt-speed="1000"
+                  >
+                    <a href="#">
+                      <div class="service-card-hh">
+                        <div class="image-sr-mm">
+                          <img
+                            alt="custom-sport"
+                            src="images/service/car-rental.png"
+                          />
+                        </div>
+                        <div class="title-serv-c">
+                          <span>Car</span> Rental Solution
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="service-slide card-bg-e"
+                    data-tilt
+                    data-tilt-max="5"
+                    data-tilt-speed="1000"
+                  >
+                    <a href="#">
+                      <div class="service-card-hh">
+                        <div class="image-sr-mm">
+                          <img
+                            alt="custom-sport"
+                            src="images/service/marketing.png"
+                          />
+                        </div>
+                        <div class="title-serv-c">
+                          <span>Marketing</span> Solution
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="service-slide card-bg-f"
+                    data-tilt
+                    data-tilt-max="5"
+                    data-tilt-speed="1000"
+                  >
+                    <a href="#">
+                      <div class="service-card-hh">
+                        <div class="image-sr-mm">
+                          <img
+                            alt="custom-sport"
+                            src="images/service/ewallet.png"
+                          />
+                        </div>
+                        <div class="title-serv-c">
+                          <span>e-Wallet</span> Solution
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Hero-->
 
-	<!--Start Hero-->
-	<section class="hero-card-web bg-gradient12 shape-bg3" id="home">
-		<div class="hero-main-rp container-fluid">
-			<div class="row">
-				<div class="col-lg-5">
-					<div class="hero-heading-sec">
-						<h2 class="wow fadeIn" data-wow-delay="0.3s"><span>Web.</span> <span>Mobile.</span>
-							<span>Graphics.</span> <span>Marketing.</span>
-						</h2>
-						<p class="wow fadeIn" data-wow-delay="0.6s">Website and App development solution for
-							transforming and innovating businesses.</p>
-						<a href="#contact" class="btn-main bg-btn lnk wow fadeIn" data-wow-delay="0.8s">Contact Us <i
-								class="fas fa-chevron-right fa-ani"></i><span class="circle"></span></a>
+    <!--Start About-->
+    <section class="about-sec-rpb pad-tb" id="about">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-10">
+            <div class="common-heading">
+              <span></span>
+              <h1 class="mb30">
+                <span class="text-second">Leading</span> Web And Mobile App
+                Development Organization.
+              </h1>
+              <p>
+                Techminate is an organization of
+                <span class="text-radius text-light text-animation bg-b"
+                  >experienced software developers </span
+                >around the world. We are expert on
+                <span class="text-bold"
+                  >blockchain, SaaS, stand alone applications and unique website
+                  creation.</span
+                >
+                Including the best business software solutions, we provide
+                <span class="text-bold"
+                  >e-commerce app, point of sales, digital marketing services,
+                  accounting and investment software solutions.</span
+                >
+                We also provide 24/7 technical support. So, Lets build something
+                special.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h3 class="mt30 mb30 text-center">We are specialized on:</h3>
+          <div class="col-md-4 mt30">
+            <div class="niwax-list">
+              <ul class="list-ul ul-check">
+                <li>DevOps technologies</li>
+                <li>Reduction in cost and raises standards</li>
+                <li>Substitution of Traditional Method of Market</li>
+                <li>An effective way of Branding and engaging the audience</li>
+                <li>Secured from vulnerable attacks</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mt30">
+            <div class="niwax-list">
+              <ul class="list-ul ul-check">
+                <li>Blockchain Technologies</li>
+                <li>UI / UX Design</li>
+                <li>Google APIs</li>
+                <li>Brand and Identity Development</li>
+                <li>Digital Marketing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mt30">
+            <div class="niwax-list">
+              <ul class="list-ul ul-check">
+                <li>Trending Technologies</li>
+                <li>Popular programming languages and frameworks</li>
+                <li>Software design and architecture</li>
+                <li>Website & E-commerce Development</li>
+                <li>Desktop & Mobile App Development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End About-->
 
-					</div>
-				</div>
-				<div class="col-lg-7">
-					<div class="hero-content-sec wow fadeIn" data-wow-delay="0.8s">
-						<div class="title-hero-oth">
-							<p>Business Inspiration Technologies<span>For Smart People And Companies</span></p>
-						</div>
-					</div>
-					<div class="hero-right-scmm">
-						<div class="hero-service-cards wow fadeInRight" data-wow-duration="2s">
-							<div class="owl-carousel service-card-prb">
-								<div class="service-slide card-bg-a" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-									<a href="#">
-										<div class="service-card-hh">
-											<div class="image-sr-mm">
-												<img alt="custom-sport" src="images/service/vr.png">
-											</div>
-											<div class="title-serv-c"><span>VR</span> Solution</div>
-										</div>
-									</a>
-								</div>
-								<div class="service-slide card-bg-b" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-									<a href="#">
-										<div class="service-card-hh">
-											<div class="image-sr-mm">
-												<img alt="custom-sport" src="images/service/app-develop.png">
-											</div>
-											<div class="title-serv-c"><span>Custom</span> App Solution</div>
-										</div>
-									</a>
-								</div>
-								<div class="service-slide card-bg-c" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-									<a href="#">
-										<div class="service-card-hh">
-											<div class="image-sr-mm">
-												<img alt="custom-sport" src="images/service/startup.png">
-											</div>
-											<div class="title-serv-c"><span>Startup</span> Solution</div>
-										</div>
-									</a>
-								</div>
-								<div class="service-slide card-bg-d" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-									<a href="#">
-										<div class="service-card-hh">
-											<div class="image-sr-mm">
-												<img alt="custom-sport" src="images/service/car-rental.png">
-											</div>
-											<div class="title-serv-c"><span>Car</span> Rental Solution</div>
-										</div>
-									</a>
-								</div>
-								<div class="service-slide card-bg-e" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-									<a href="#">
-										<div class="service-card-hh">
-											<div class="image-sr-mm">
-												<img alt="custom-sport" src="images/service/marketing.png">
-											</div>
-											<div class="title-serv-c"><span>Marketing</span> Solution</div>
-										</div>
-									</a>
-								</div>
-								<div class="service-slide card-bg-f" data-tilt data-tilt-max="5" data-tilt-speed="1000">
-									<a href="#">
-										<div class="service-card-hh">
-											<div class="image-sr-mm">
-												<img alt="custom-sport" src="images/service/ewallet.png">
-											</div>
-											<div class="title-serv-c"><span>e-Wallet</span> Solution</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--End Hero-->
+    <!--Start Technologies-->
+    <section class="service-section-prb pad-tb">
+      <div class="container">
+        <div class="row upset">
+          <div
+            data-tilt
+            data-tilt-max="5"
+            data-tilt-speed="1000"
+            class="col-lg-6-cus wow fadeInUp"
+            data-wow-delay=".2s"
+          >
+            <div class="service-sec-brp srvc-bg-nx bg-gradient13 text-w">
+              <h4 class="mb10">Technologies We use</h4>
+              <p>
+                We use all the leading modern technologies to develop highly
+                secured, scaleable and maintainable applications.
+              </p>
+              <!-- <a href="#" class="mt20 link-prb">Learn More <i class="fas fa-chevron-right"></i></a> -->
+            </div>
+          </div>
+          <div
+            data-tilt
+            data-tilt-max="5"
+            data-tilt-speed="1000"
+            class="col-lg-3-cus wow fadeInUp"
+            data-wow-delay=".4s"
+          >
+            <div class="service-sec-list srvc-bg-nx srcl1">
+              <img src="images/icons/development.svg" alt="service" />
+              <h5 class="mb10">Web Development</h5>
+              <ul class="-service-list">
+                <li><a href="#">Django</a></li>
+                <li>
+                  <a href="#"><strong>.</strong>Net</a>
+                </li>
+                <li><a href="#">Laravel</a></li>
+                <li><a href="#">Express</a></li>
+              </ul>
+              <p>
+                We provide turn-key software product development services that
+                add value to your business. We offer our customers a wealth of
+                technical and business expertise.
+              </p>
+            </div>
+          </div>
+          <div
+            data-tilt
+            data-tilt-max="5"
+            data-tilt-speed="1000"
+            class="col-lg-3-cus wow fadeInUp"
+            data-wow-delay=".6s"
+          >
+            <div class="service-sec-list srvc-bg-nx srcl2">
+              <img src="images/icons/ecommerce.svg" alt="service" />
+              <h5 class="mb10">Ecommerce Development</h5>
+              <ul class="-service-list">
+                <li><a href="#">Magento</a></li>
+                <li><a href="#">Wordpress</a></li>
+                <li><a href="#">Shopify </a></li>
+              </ul>
+              <p>
+                We are an e-commerce service agency, dedicated to providing you
+                with e-commerce solutions of extraordinary quality.our
+                developers have extensive experience in developing.
+              </p>
+            </div>
+          </div>
+          <div
+            data-tilt
+            data-tilt-max="5"
+            data-tilt-speed="1000"
+            class="col-lg-3-cus mt30- wow fadeInUp"
+            data-wow-delay=".8s"
+          >
+            <div class="service-sec-list srvc-bg-nx srcl3">
+              <img src="images/icons/app.svg" alt="service" />
+              <h5 class="mb10">Mobile App Development</h5>
+              <ul class="-service-list">
+                <li><a href="#">Flutter</a></li>
+                <li><a href="#">React Native</a></li>
+                <li><a href="#">Capacitor</a></li>
+              </ul>
+              <p>
+                We design a professional UI/UX, prototype, IOS, android and
+                cross-platform apps using Apple and Google guidelines, our apps
+                are user friendly and eye catching.
+              </p>
+            </div>
+          </div>
+          <div
+            data-tilt
+            data-tilt-max="5"
+            data-tilt-speed="1000"
+            class="col-lg-3-cus mt30- wow fadeInUp"
+            data-wow-delay="1s"
+          >
+            <div class="service-sec-list srvc-bg-nx srcl4">
+              <img src="images/icons/tech.svg" alt="service" />
+              <h5 class="mb10">Development Operations</h5>
+              <ul class="-service-list">
+                <li><a href="#">AWS</a></li>
+                <li><a href="#">Docker</a></li>
+                <li><a href="#">Redis</a></li>
+              </ul>
+              <p>
+                Lorem Ipsum is text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500.
+              </p>
+            </div>
+          </div>
+          <div
+            data-tilt
+            data-tilt-max="5"
+            data-tilt-speed="1000"
+            class="col-lg-6-cus mt30- wow fadeInUp"
+            data-wow-delay="1.2s"
+          >
+            <div class="service-sec-list srvc-bg-nx srcl5">
+              <img src="images/icons/seo.svg" alt="service" />
+              <h5 class="mb10">Digital Marketing</h5>
+              <ul class="-service-list">
+                <li><a href="#">Sprout </a></li>
+                <li><a href="#">Optimizely </a></li>
+                <li><a href="#">SendGrid </a></li>
+                <li><a href="#">Audiense</a></li>
+              </ul>
+              <p>
+                We provide promotion and marketing solutions to achieve the best
+                revenew. We have Good communication skills & Strong expertise in
+                communication and building communities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Technologies-->
 
-	<!--Start About-->
-	<section class="about-sec-rpb pad-tb" id="about">
-		<div class="container">
-			<div class="row justify-content-center text-center">
-				<div class="col-lg-10">
-					<div class="common-heading">
-						<span></span>
-						<h1 class="mb30"><span class="text-second">Leading</span> Web And Mobile App Development
-							Organization.
-						</h1>
-						<p>Techminate is an organization of <span
-								class="text-radius text-light text-animation bg-b">experienced
-								software developers </span>around the world.
-							We are expert on <span class="text-bold">blockchain, SaaS, stand alone applications and
-								unique website
-								creation.</span>
-							Including the best business software solutions,
-							we provide <span class="text-bold">e-commerce app, point of sales, digital marketing
-								services, accounting and investment software solutions.</span>
-							We also provide 24/7 technical support. So, Lets build something special.
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<h3 class="mt30 mb30 text-center">We are specialized on:</h3>
-				<div class="col-md-4 mt30">
-					<div class="niwax-list">
-						<ul class="list-ul ul-check">
-							<li>DevOps technologies</li>
-							<li>Reduction in cost and raises standards</li>
-							<li>Substitution of Traditional Method of Market</li>
-							<li>An effective way of Branding and engaging the audience</li>
-							<li>Secured from vulnerable attacks</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4 mt30">
-					<div class="niwax-list">
-						<ul class="list-ul ul-check">
-							<li>Blockchain Technologies</li>
-							<li>UI / UX Design</li>
-							<li>Google APIs</li>
-							<li>Brand and Identity Development</li>
-							<li>Digital Marketing</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4 mt30">
-					<div class="niwax-list">
-						<ul class="list-ul ul-check">
-							<li>Trending Technologies</li>
-							<li>Popular programming languages and frameworks</li>
-							<li>Software design and architecture</li>
-							<li>Website & E-commerce Development</li>
-							<li>Desktop & Mobile App Development</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--End About-->
+    <!--Start statistics-->
+    <div class="statistics-section bg-gradient6 pad-tb tilt3d">
+      <div class="container">
+        <div class="row justify-content-center t-ctr">
+          <div class="col-lg-4 col-sm-6">
+            <div class="statistics">
+              <div
+                data-tilt
+                data-tilt-max="20"
+                data-tilt-speed="1000"
+                class="statistics-img"
+              >
+                <img
+                  src="images/icons/startup.svg"
+                  alt="years"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="statnumb">
+                <span class="counter">2</span><span>+</span>
+                <p>Years In Business</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="statistics">
+              <div
+                data-tilt
+                data-tilt-max="20"
+                data-tilt-speed="1000"
+                class="statistics-img"
+              >
+                <img src="images/icons/team.svg" alt="team" class="img-fluid" />
+              </div>
+              <div class="statnumb">
+                <span class="counter">20</span><span>+</span>
+                <p>Team Members</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row small t-ctr">
+          <div class="col-lg-3 col-sm-6">
+            <div class="statistics">
+              <div
+                data-tilt
+                data-tilt-max="20"
+                data-tilt-speed="1000"
+                class="statistics-img"
+              >
+                <img
+                  src="images/icons/deal.svg"
+                  alt="happy"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="statnumb">
+                <span class="counter">50</span><span>+</span>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="statistics">
+              <div
+                data-tilt
+                data-tilt-max="20"
+                data-tilt-speed="1000"
+                class="statistics-img"
+              >
+                <img
+                  src="images/icons/computers.svg"
+                  alt="project"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="statnumb counter-number">
+                <span class="counter">60</span><span>+</span>
+                <p>Projects Done</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="statistics">
+              <div
+                data-tilt
+                data-tilt-max="20"
+                data-tilt-speed="1000"
+                class="statistics-img"
+              >
+                <img
+                  src="images/icons/worker.svg"
+                  alt="work"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="statnumb">
+                <span class="counter">100</span><span>k</span>
+                <p>Hours Worked</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="statistics mb0">
+              <div
+                data-tilt
+                data-tilt-max="20"
+                data-tilt-speed="1000"
+                class="statistics-img"
+              >
+                <img
+                  src="images/icons/customer-service.svg"
+                  alt="support"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="statnumb">
+                <span class="counter">24</span><span>/</span
+                ><span class="counter">7</span>
+                <p>Support Available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End statistics-->
 
-	<!--Start Technologies-->
-	<section class="service-section-prb pad-tb">
-		<div class="container">
-			<div class="row upset">
-				<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-6-cus wow fadeInUp"
-					data-wow-delay=".2s">
-					<div class="service-sec-brp srvc-bg-nx bg-gradient13 text-w">
-						<h4 class="mb10">Technologies We use</h4>
-						<p>We use all the leading modern technologies to develop highly secured, scaleable and
-							maintainable applications.</p>
-						<!-- <a href="#" class="mt20 link-prb">Learn More <i class="fas fa-chevron-right"></i></a> -->
-					</div>
-				</div>
-				<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-3-cus wow fadeInUp"
-					data-wow-delay=".4s">
-					<div class="service-sec-list srvc-bg-nx srcl1">
-						<img src="images/icons/development.svg" alt="service">
-						<h5 class="mb10">Web Development</h5>
-						<ul class="-service-list">
-							<li> <a href="#">Django</a> </li>
-							<li> <a href="#"><strong>.</strong>Net</a> </li>
-							<li> <a href="#">Laravel</a> </li>
-							<li> <a href="#">Express</a> </li>
-						</ul>
-						<p>We provide turn-key software product development services that add value to your business. We
-							offer our customers a wealth of technical and business expertise.</p>
-					</div>
-				</div>
-				<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-3-cus wow fadeInUp"
-					data-wow-delay=".6s">
-					<div class="service-sec-list srvc-bg-nx srcl2">
-						<img src="images/icons/ecommerce.svg" alt="service">
-						<h5 class="mb10">Ecommerce Development</h5>
-						<ul class="-service-list">
-							<li> <a href="#">Magento</a> </li>
-							<li> <a href="#">Wordpress</a> </li>
-							<li> <a href="#">Shopify </a> </li>
-						</ul>
-						<p>We are an e-commerce service agency, dedicated to providing you with e-commerce solutions of
-							extraordinary quality.our developers have extensive experience in developing.</p>
-					</div>
-				</div>
-				<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-3-cus mt30- wow fadeInUp"
-					data-wow-delay=".8s">
-					<div class="service-sec-list srvc-bg-nx srcl3">
-						<img src="images/icons/app.svg" alt="service">
-						<h5 class="mb10">Mobile App Development</h5>
-						<ul class="-service-list">
-							<li> <a href="#">Flutter</a> </li>
-							<li> <a href="#">React Native</a> </li>
-							<li> <a href="#">Capacitor</a></li>
-						</ul>
-						<p>We design a professional UI/UX, prototype, IOS, android and cross-platform apps using Apple
-							and Google guidelines, our apps are user friendly and eye catching.</p>
-					</div>
-				</div>
-				<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-3-cus mt30- wow fadeInUp"
-					data-wow-delay="1s">
-					<div class="service-sec-list srvc-bg-nx srcl4">
-						<img src="images/icons/tech.svg" alt="service">
-						<h5 class="mb10">Development Operations</h5>
-						<ul class="-service-list">
-							<li> <a href="#">AWS</a> </li>
-							<li> <a href="#">Docker</a></li>
-							<li> <a href="#">Redis</a></li>
-						</ul>
-						<p>Lorem Ipsum is text of the printing and typesetting industry. Lorem Ipsum has been the
-							industry's standard dummy text ever since the 1500.</p>
-					</div>
-				</div>
-				<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-6-cus mt30- wow fadeInUp"
-					data-wow-delay="1.2s">
-					<div class="service-sec-list srvc-bg-nx srcl5">
-						<img src="images/icons/seo.svg" alt="service">
-						<h5 class="mb10">Digital Marketing</h5>
-						<ul class="-service-list">
-							<li> <a href="#">Sprout </a> </li>
-							<li> <a href="#">Optimizely </a> </li>
-							<li> <a href="#">SendGrid </a></li>
-							<li> <a href="#">Audiense</a></li>
-						</ul>
-						<p>We provide promotion and marketing solutions to achieve the best revenew. We have Good
-							communication skills & Strong expertise in communication and building communities.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--End Technologies-->
+    <!--why choose-->
+    <section class="why-choos-lg pad-tb deep-dark" id="why">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="common-heading text-l">
+              <span>Why Choose Us</span>
+              <h2 class="mb20">
+                Why Techminate
+                <span class="text-second text-bold">Ranked Top</span> Among The
+                Leading Web & App Development Companies
+              </h2>
+              <p></p>
+              <div class="itm-media-object mt40 tilt-3d">
+                <div class="media">
+                  <div
+                    class="img-ab- base"
+                    data-tilt
+                    data-tilt-max="20"
+                    data-tilt-speed="1000"
+                  >
+                    <img
+                      src="images/icons/computers.svg"
+                      alt="icon"
+                      class="layer"
+                    />
+                  </div>
+                  <div class="media-body">
+                    <h4>Streamlined Project Management</h4>
+                    <p>
+                      Techminate have an excellent group of efficient workers,
+                      we use streamline management system to evaluate our plan,
+                      the prime advantage of this management system is, we can
+                      sort the actual way of working on different and difficult
+                      projects. It brings more transparency on working space.
+                      Moreover, helps to eliminate unnecessary errors and
+                      blockage.
+                    </p>
+                  </div>
+                </div>
+                <div class="media mt40">
+                  <div
+                    class="img-ab- base"
+                    data-tilt
+                    data-tilt-max="20"
+                    data-tilt-speed="1000"
+                  >
+                    <img
+                      src="images/icons/worker.svg"
+                      alt="icon"
+                      class="layer"
+                    />
+                  </div>
+                  <div class="media-body">
+                    <h4>A Dedicated Team of Experts</h4>
+                    <p>
+                      Team of Experts plays the vital role of any successful
+                      implementation. A Team of Experts is people from different
+                      sectors, each with their own deep experience and
+                      knowledge. We build our Team of Experts based on the needs
+                      of each project.
+                    </p>
+                  </div>
+                </div>
+                <div class="media mt40">
+                  <div
+                    class="img-ab- base"
+                    data-tilt
+                    data-tilt-max="20"
+                    data-tilt-speed="1000"
+                  >
+                    <img src="images/icons/deal.svg" alt="icon" class="layer" />
+                  </div>
+                  <div class="media-body">
+                    <h4>Completion of Project in Given Time</h4>
+                    <p>
+                      We know the value of your time according to our previous
+                      work experience our team is dedicated to complete their
+                      tasks before deadline without compromising the quality of
+                      work. Our main agenda is to actualise your imagination.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              data-tilt
+              data-tilt-max="5"
+              data-tilt-speed="1000"
+              class="single-image bg-shape-dez wow fadeIn"
+              data-wow-duration="2s"
+            >
+              <img
+                src="images/about/about-company.jpg"
+                alt="image"
+                class="img-fluid"
+              />
+            </div>
+            <p class="text-center mt30">
+              Our aim is to alleviate your tech life more flexible and help to
+              upgrade it to the next level. We specially coordinate with our
+              clients by providing full IT support by practising the better,
+              efficient and smart technologies, which effectively plays a
+              crucial role in shaping the client's distinction and adds more
+              value to the consumers need.
+            </p>
+            <div class="cta-card mt60 text-center">
+              <h3 class="mb20">
+                Let's Start a
+                <span class="text-second text-bold">New Project</span> Together
+              </h3>
+              <p>
+                You already have a project in mind and want to work with us? let
+                us know to help you to find the right way in which direction it
+                should go. We are looking forward to hearing from you, click the
+                link below to contact with our agent.
+              </p>
+              <a href="#contact" class="btn-outline lnk mt30"
+                >Contact Us <i class="fas fa-chevron-right fa-icon"></i
+                ><span class="circle"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End why choose-->
 
-	<!--Start statistics-->
-	<div class="statistics-section bg-gradient6 pad-tb tilt3d">
-		<div class="container">
-			<div class="row justify-content-center t-ctr">
-				<div class="col-lg-4 col-sm-6">
-					<div class="statistics">
-						<div data-tilt data-tilt-max="20" data-tilt-speed="1000" class="statistics-img">
-							<img src="images/icons/startup.svg" alt="years" class="img-fluid" />
-						</div>
-						<div class="statnumb">
-							<span class="counter">2</span><span>+</span>
-							<p>Years In Business</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<div class="statistics">
-						<div data-tilt data-tilt-max="20" data-tilt-speed="1000" class="statistics-img">
-							<img src="images/icons/team.svg" alt="team" class="img-fluid" />
-						</div>
-						<div class="statnumb">
-							<span class="counter">20</span><span>+</span>
-							<p>Team Members</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row small t-ctr">
-				<div class="col-lg-3 col-sm-6">
-					<div class="statistics">
-						<div data-tilt data-tilt-max="20" data-tilt-speed="1000" class="statistics-img">
-							<img src="images/icons/deal.svg" alt="happy" class="img-fluid" />
-						</div>
-						<div class="statnumb">
-							<span class="counter">50</span><span>+</span>
-							<p>Happy Clients</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="statistics">
-						<div data-tilt data-tilt-max="20" data-tilt-speed="1000" class="statistics-img">
-							<img src="images/icons/computers.svg" alt="project" class="img-fluid" />
-						</div>
-						<div class="statnumb counter-number">
-							<span class="counter">60</span><span>+</span>
-							<p>Projects Done</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="statistics">
-						<div data-tilt data-tilt-max="20" data-tilt-speed="1000" class="statistics-img">
-							<img src="images/icons/worker.svg" alt="work" class="img-fluid" />
-						</div>
-						<div class="statnumb">
-							<span class="counter">100</span><span>k</span>
-							<p>Hours Worked</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="statistics mb0">
-						<div data-tilt data-tilt-max="20" data-tilt-speed="1000" class="statistics-img">
-							<img src="images/icons/customer-service.svg" alt="support" class="img-fluid" />
-						</div>
-						<div class="statnumb">
-							<span class="counter">24</span><span>/</span><span class="counter">7</span>
-							<p>Support Available</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--End statistics-->
+    <!--Start work-category-->
+    <section class="work-category pad-tb" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 v-center">
+            <div class="common-heading text-l">
+              <span>Industries we work for</span>
+              <h2>Helping Businesses in All Domains</h2>
+              <p>
+                Successfully delivered digital products Lorem Ipsum is simply
+                dummy text of the printing and typesetting industry.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="work-card-set">
+              <div class="icon-set wow fadeIn" data-wow-delay=".2s">
+                <div class="work-card cd1">
+                  <div class="icon-bg">
+                    <img src="images/icons/icon-1.png" alt="Industries" />
+                  </div>
+                  <p>Social Networking</p>
+                </div>
+              </div>
+              <div class="icon-set wow fadeIn" data-wow-delay=".4s">
+                <div class="work-card cd2">
+                  <div class="icon-bg">
+                    <img src="images/icons/icon-2.png" alt="Industries" />
+                  </div>
+                  <p>Digital Marketing</p>
+                </div>
+              </div>
+              <div class="icon-set wow fadeIn" data-wow-delay=".6s">
+                <div class="work-card cd3">
+                  <div class="icon-bg">
+                    <img src="images/icons/icon-3.png" alt="Industries" />
+                  </div>
+                  <p>Ecommerce Development</p>
+                </div>
+              </div>
+              <div class="icon-set wow fadeIn" data-wow-delay=".8s">
+                <div class="work-card cd4">
+                  <div class="icon-bg">
+                    <img src="images/icons/icon-4.png" alt="Industries" />
+                  </div>
+                  <p>Video Service</p>
+                </div>
+              </div>
+              <div class="icon-set wow fadeIn" data-wow-delay="1s">
+                <div class="work-card cd5">
+                  <div class="icon-bg">
+                    <img src="images/icons/icon-5.png" alt="Industries" />
+                  </div>
+                  <p>Banking Service</p>
+                </div>
+              </div>
+              <div class="icon-set wow fadeIn" data-wow-delay="1.2s">
+                <div class="work-card cd6">
+                  <div class="icon-bg">
+                    <img src="images/icons/icon-6.png" alt="Industries" />
+                  </div>
+                  <p>Enterprise Service</p>
+                </div>
+              </div>
+              <div class="icon-set wow fadeIn" data-wow-delay="1.4s">
+                <div class="work-card cd7">
+                  <div class="icon-bg">
+                    <img src="images/icons/icon-7.png" alt="Industries" />
+                  </div>
+                  <p>Education Service</p>
+                </div>
+              </div>
+              <div class="icon-set wow fadeIn" data-wow-delay="1.6s">
+                <div class="work-card cd8">
+                  <div class="icon-bg">
+                    <img src="images/icons/icon-8.png" alt="Industries" />
+                  </div>
+                  <p>Tour and Travels</p>
+                </div>
+              </div>
+              <div class="icon-set wow fadeIn" data-wow-delay="1.8s">
+                <div class="work-card cd9">
+                  <div class="icon-bg">
+                    <img src="images/icons/icon-9.png" alt="Industries" />
+                  </div>
+                  <p>Health Service</p>
+                </div>
+              </div>
+              <div class="icon-set wow fadeIn" data-wow-delay="2s">
+                <div class="work-card cd10">
+                  <div class="icon-bg">
+                    <img src="images/icons/icon-10.png" alt="Industries" />
+                  </div>
+                  <p>Event & Ticket</p>
+                </div>
+              </div>
+              <div class="icon-set wow fadeIn" data-wow-delay="2.2s">
+                <div class="work-card cd11">
+                  <div class="icon-bg">
+                    <img src="images/icons/icon-11.png" alt="Industries" />
+                  </div>
+                  <p>Restaurant Service</p>
+                </div>
+              </div>
+              <div class="icon-set wow fadeIn" data-wow-delay="2.4s">
+                <div class="work-card cd12">
+                  <div class="icon-bg">
+                    <img src="images/icons/icon-12.png" alt="Industries" />
+                  </div>
+                  <p>Business Consultant</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End  work-category-->
 
-	<!--why choose-->
-	<section class="why-choos-lg pad-tb deep-dark" id="why">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="common-heading text-l">
-						<span>Why Choose Us</span>
-						<h2 class="mb20">Why Techminate <span class="text-second text-bold">Ranked Top</span> Among The
-							Leading Web & App Development Companies</h2>
-						<p>
+    <!--Start Portfolio-->
+    <section class="portfolio-section pad-tb" id="portfolio">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="common-heading">
+              <span>Our Work</span>
+              <h2 class="mb0">Our Latest Creative Work</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-lg-8 col-sm-8 mt60 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="isotope_item hover-scale">
+              <div
+                class="item-image"
+                data-tilt
+                data-tilt-max="2"
+                data-tilt-speed="1000"
+              >
+                <a href="#"
+                  ><img
+                    src="images/portfolio/image-d.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="item-info">
+                <h4><a href="#">Ecommerce Development</a></h4>
+                <p>Web Application</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-sm-4 mt60 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div class="isotope_item hover-scale">
+              <div
+                class="item-image"
+                data-tilt
+                data-tilt-max="2"
+                data-tilt-speed="1000"
+              >
+                <a href="#"
+                  ><img
+                    src="images/portfolio/image-1.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="item-info">
+                <h4><a href="#">Creative App</a></h4>
+                <p>iOs, Android</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-sm-4 mt60 wow fadeInUp"
+            data-wow-delay="0.6s"
+          >
+            <div class="isotope_item hover-scale">
+              <div
+                class="item-image"
+                data-tilt
+                data-tilt-max="2"
+                data-tilt-speed="1000"
+              >
+                <a href="#"
+                  ><img
+                    src="images/portfolio/image-6.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="item-info">
+                <h4><a href="#">Brochure Design</a></h4>
+                <p>Graphic, Print</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-8 col-sm-8 mt60 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div class="isotope_item hover-scale">
+              <div
+                class="item-image"
+                data-tilt
+                data-tilt-max="2"
+                data-tilt-speed="1000"
+              >
+                <a href="#"
+                  ><img
+                    src="images/portfolio/image-c.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="item-info">
+                <h4><a href="#">Icon Pack</a></h4>
+                <p>iOs, Android</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Portfolio-->
 
-						</p>
-						<div class="itm-media-object mt40 tilt-3d">
-							<div class="media">
-								<div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img
-										src="images/icons/computers.svg" alt="icon" class="layer"></div>
-								<div class="media-body">
-									<h4>Streamlined Project Management</h4>
-									<p>
-										Techminate have an excellent group of efficient workers, we use streamline
-										management system to evaluate our plan,
-										the prime advantage of this management system is, we can sort the actual way of
-										working on different and difficult projects.
-										It brings more transparency on working space. Moreover, helps to eliminate
-										unnecessary errors and blockage.
-									</p>
-								</div>
-							</div>
-							<div class="media mt40">
-								<div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img
-										src="images/icons/worker.svg" alt="icon" class="layer"></div>
-								<div class="media-body">
-									<h4>A Dedicated Team of Experts</h4>
-									<p>
-										Team of Experts plays the vital role of any successful implementation.
-										A Team of Experts is people from different sectors, each with their own deep
-										experience and knowledge.
-										We build our Team of Experts based on the needs of each project.
-									</p>
-								</div>
-							</div>
-							<div class="media mt40">
-								<div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"> <img
-										src="images/icons/deal.svg" alt="icon" class="layer"></div>
-								<div class="media-body">
-									<h4>Completion of Project in Given Time</h4>
-									<p>We know the value of your time according to our previous work experience
-										our team is dedicated to complete their tasks before deadline without
-										compromising the quality of work.
-										Our main agenda is to actualise your imagination.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="single-image bg-shape-dez wow fadeIn"
-						data-wow-duration="2s"><img src="images/about/about-company.jpg" alt="image" class="img-fluid">
-					</div>
-					<p class="text-center mt30">
-						Our aim is to alleviate your tech life more flexible and help to upgrade it to the next level.
-						We specially coordinate with our clients by providing full IT support by practising the better,
-						efficient and smart technologies,
-						which effectively plays a crucial role in shaping the client's distinction and adds more value
-						to the consumers need.
-					</p>
-					<div class="cta-card mt60 text-center">
-						<h3 class="mb20">Let's Start a <span class="text-second text-bold">New Project</span> Together
-						</h3>
-						<p>
-							You already have a project in mind and want to work with us?
-							let us know to help you to find the right way in which direction it should go.
-							We are looking forward to hearing from you, click the link below to contact with our agent.
-						</p>
-						<a href="#contact" class="btn-outline lnk mt30">Contact Us <i
-								class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--End why choose-->
+    <!--Start Team-->
+    <section class="clients-section- bg-gradient15 pad-tb" id="team">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="common-heading ptag">
+              <span>We Are Awesome</span>
+              <h2>Core Team Members</h2>
+              <p class="mb0"></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="full-image-card hover-scale">
+              <div class="image-div">
+                <a href="#"
+                  ><img src="images/team/nath.jpg" alt="team" class="img-fluid"
+                /></a>
+              </div>
+              <div class="info-text-block">
+                <h4><a href="#">NATHANAËL JAGENI</a></h4>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="full-image-card hover-scale">
+              <div class="image-div">
+                <a href="#"
+                  ><img
+                    src="images/team/sazid.jpeg"
+                    alt="team"
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="info-text-block">
+                <h4><a href="#">Sazid Ahmed</a></h4>
+                <p>Software Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="full-image-card hover-scale">
+              <div class="image-div">
+                <a href="#"
+                  ><img
+                    src="images/team/inti.jpeg"
+                    alt="team"
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="info-text-block">
+                <h4><a href="#">M. Aziz</a></h4>
+                <p>Software Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="full-image-card hover-scale">
+              <div class="image-div">
+                <a href="#"
+                  ><img
+                    src="images/team/mahadad.jpeg"
+                    alt="team"
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="info-text-block">
+                <h4><a href="#">Mahadad Hossain</a></h4>
+                <p>Software Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="full-image-card hover-scale">
+              <div class="image-div">
+                <a href="#"
+                  ><img
+                    src="images/team/laboni.jpg"
+                    alt="team"
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="info-text-block">
+                <h4><a href="#">LABONI SARKER</a></h4>
+                <p>Lawyer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="full-image-card hover-scale">
+              <div class="image-div">
+                <a href="#"
+                  ><img
+                    src="images/team/avatar2.png"
+                    alt="team"
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="info-text-block">
+                <h4><a href="#">ALI AR REZA</a></h4>
+                <p>UI/UX & Graphic Desinger</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="full-image-card hover-scale">
+              <div class="image-div">
+                <a href="#"
+                  ><img
+                    src="images/team/tanvir.jpg"
+                    alt="team"
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="info-text-block">
+                <h4><a href="#">TANVIR AHMED</a></h4>
+                <p>Regional Agent (Europe)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Team-->
 
-	<!--Start work-category-->
-	<section class="work-category pad-tb" id="services">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 v-center">
-					<div class="common-heading text-l">
-						<span>Industries we work for</span>
-						<h2>Helping Businesses in All Domains</h2>
-						<p>Successfully delivered digital products Lorem Ipsum is simply dummy text of the printing and
-							typesetting industry.</p>
-					</div>
-				</div>
-				<div class="col-lg-8">
-					<div class="work-card-set">
-						<div class="icon-set wow fadeIn" data-wow-delay=".2s">
-							<div class="work-card cd1">
-								<div class="icon-bg"><img src="images/icons/icon-1.png" alt="Industries" /></div>
-								<p>Social Networking</p>
-							</div>
-						</div>
-						<div class="icon-set wow fadeIn" data-wow-delay=".4s">
-							<div class="work-card cd2">
-								<div class="icon-bg"><img src="images/icons/icon-2.png" alt="Industries" /></div>
-								<p>Digital Marketing</p>
-							</div>
-						</div>
-						<div class="icon-set wow fadeIn" data-wow-delay=".6s">
-							<div class="work-card cd3">
-								<div class="icon-bg"><img src="images/icons/icon-3.png" alt="Industries" /></div>
-								<p>Ecommerce Development</p>
-							</div>
-						</div>
-						<div class="icon-set wow fadeIn" data-wow-delay=".8s">
-							<div class="work-card cd4">
-								<div class="icon-bg"><img src="images/icons/icon-4.png" alt="Industries" /></div>
-								<p>Video Service</p>
-							</div>
-						</div>
-						<div class="icon-set wow fadeIn" data-wow-delay="1s">
-							<div class="work-card cd5">
-								<div class="icon-bg"><img src="images/icons/icon-5.png" alt="Industries" /></div>
-								<p>Banking Service</p>
-							</div>
-						</div>
-						<div class="icon-set wow fadeIn" data-wow-delay="1.2s">
-							<div class="work-card cd6">
-								<div class="icon-bg"><img src="images/icons/icon-6.png" alt="Industries" /></div>
-								<p>Enterprise Service</p>
-							</div>
-						</div>
-						<div class="icon-set wow fadeIn" data-wow-delay="1.4s">
-							<div class="work-card cd7">
-								<div class="icon-bg"><img src="images/icons/icon-7.png" alt="Industries" /></div>
-								<p>Education Service</p>
-							</div>
-						</div>
-						<div class="icon-set wow fadeIn" data-wow-delay="1.6s">
-							<div class="work-card cd8">
-								<div class="icon-bg"><img src="images/icons/icon-8.png" alt="Industries" /></div>
-								<p>Tour and Travels</p>
-							</div>
-						</div>
-						<div class="icon-set wow fadeIn" data-wow-delay="1.8s">
-							<div class="work-card cd9">
-								<div class="icon-bg"><img src="images/icons/icon-9.png" alt="Industries" /></div>
-								<p>Health Service</p>
-							</div>
-						</div>
-						<div class="icon-set wow fadeIn" data-wow-delay="2s">
-							<div class="work-card cd10">
-								<div class="icon-bg"><img src="images/icons/icon-10.png" alt="Industries" /></div>
-								<p>Event & Ticket</p>
-							</div>
-						</div>
-						<div class="icon-set wow fadeIn" data-wow-delay="2.2s">
-							<div class="work-card cd11">
-								<div class="icon-bg"><img src="images/icons/icon-11.png" alt="Industries" /></div>
-								<p>Restaurant Service</p>
-							</div>
-						</div>
-						<div class="icon-set wow fadeIn" data-wow-delay="2.4s">
-							<div class="work-card cd12">
-								<div class="icon-bg"><img src="images/icons/icon-12.png" alt="Industries" /></div>
-								<p>Business Consultant</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--End  work-category-->
+    <!--Start Contact-->
+    <section class="cta-area pad-tb" id="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="common-heading">
+              <span>24/7 Support</span>
+              <h2>Our Agents</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row upset shape-numm">
+          <div
+            class="col-lg-4 col-sm-6 shape-loc wow fadeInUp"
+            data-wow-delay=".4s"
+          >
+            <div class="office-card mb0">
+              <div class="office-text">
+                <h6>NATHANAËL JAGENI</h6>
+                <ul class="footer-address-list link-hover">
+                  <li><a href="#">hello@nathanaeljageni.fr</a></li>
+                  <li><a href="#">+33677026669</a></li>
+                  <li><a href="#">Paris, France.</a></li>
+                </ul>
+                <a
+                  href="tel:+33677026669"
+                  target="blank"
+                  class="btn-outline rount-btn"
+                  ><i class="fas fa-phone-alt"></i
+                ></a>
+                <a
+                  href="mailto:hello@nathanaeljageni.fr"
+                  target="blank"
+                  class="btn-outline rount-btn"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-sm-6 shape-loc wow fadeInUp"
+            data-wow-delay=".2s"
+          >
+            <div class="office-card">
+              <div class="office-text">
+                <h6>Tanvir Ahmed</h6>
+                <ul class="footer-address-list link-hover">
+                  <li><a href="#">tanvirahmed289@gmail.com</a></li>
+                  <li><a href="#">+4915208715741</a></li>
+                  <li>
+                    <a href="#">Essen, Germany.</a>
+                  </li>
+                </ul>
+                <a
+                  href="tel:+4915208715741"
+                  target="blank"
+                  class="btn-outline rount-btn"
+                  ><i class="fas fa-phone-alt"></i
+                ></a>
+                <a
+                  href="mailto:tanvirahmed289@gmail.com"
+                  target="blank"
+                  class="btn-outline rount-btn"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-sm-6 shape-loc wow fadeInUp"
+            data-wow-delay=".6s"
+          >
+            <div class="office-card">
+              <div class="office-text">
+                <h6>Sazid Ahmed</h6>
+                <ul class="footer-address-list link-hover">
+                  <li><a href="#">sazidahmed.official@gmail.com</a></li>
+                  <li><a href="#">+8801680800810</a></li>
+                  <li><a href="#">Dhaka, Bangladesh, 1230.</a></li>
+                </ul>
+                <a
+                  href="tel:+8801680800810"
+                  target="blank"
+                  class="btn-outline rount-btn"
+                  ><i class="fas fa-phone-alt"></i
+                ></a>
+                <a
+                  href="mailto:sazidahmed.official@gmail.com"
+                  target="blank"
+                  class="btn-outline rount-btn"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shape shape-a1">
+        <img src="images/shape/shape-3.svg" alt="shape" />
+      </div>
+      <div class="shape shape-a2">
+        <img src="images/shape/shape-4.svg" alt="shape" />
+      </div>
+      <div class="shape shape-a3">
+        <img src="images/shape/shape-13.svg" alt="shape" />
+      </div>
+      <div class="shape shape-a4">
+        <img src="images/shape/shape-11.svg" alt="shape" />
+      </div>
+    </section>
+    <!--End Contact-->
 
-	<!--Start Portfolio-->
-	<section class="portfolio-section pad-tb" id="portfolio">
-		<div class="container">
-			<div class="row justify-content-center ">
-				<div class="col-lg-8">
-					<div class="common-heading">
-						<span>Our Work</span>
-						<h2 class="mb0">Our Latest Creative Work</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-8 col-sm-8 mt60 wow fadeInUp" data-wow-delay="0.2s">
-					<div class="isotope_item hover-scale">
-						<div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
-							<a href="#"><img src="images/portfolio/image-d.jpg" alt="image" class="img-fluid" /> </a>
-						</div>
-						<div class="item-info">
-							<h4><a href="#">Ecommerce Development</a></h4>
-							<p>Web Application</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-4 mt60 wow fadeInUp" data-wow-delay="0.4s">
-					<div class="isotope_item hover-scale">
-						<div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
-							<a href="#"><img src="images/portfolio/image-1.jpg" alt="image" class="img-fluid" /> </a>
-						</div>
-						<div class="item-info">
-							<h4><a href="#">Creative App</a></h4>
-							<p>iOs, Android</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-4 mt60 wow fadeInUp" data-wow-delay="0.6s">
-					<div class="isotope_item hover-scale">
-						<div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
-							<a href="#"><img src="images/portfolio/image-6.jpg" alt="image" class="img-fluid" /> </a>
-						</div>
-						<div class="item-info">
-							<h4><a href="#">Brochure Design</a></h4>
-							<p>Graphic, Print</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-8 col-sm-8 mt60 wow fadeInUp" data-wow-delay="0.8s">
-					<div class="isotope_item hover-scale">
-						<div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
-							<a href="#"><img src="images/portfolio/image-c.jpg" alt="image" class="img-fluid" /> </a>
-						</div>
-						<div class="item-info">
-							<h4><a href="#">Icon Pack</a></h4>
-							<p>iOs, Android</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--End Portfolio-->
+    <!--Start Footer-->
+    <footer>
+      <div class="footer-row2">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-3 col-sm-12 ftr-brand-pp">
+              <a class="navbar-brand mt30 mb25" href="#">
+                <img
+                  style="height: 30px; width: 200px"
+                  src="images/logo.png"
+                  alt="Logo"
+                  width="100"
+              /></a>
+              <p>Inspired to run your business using Latest technologies ?</p>
+              <a href="tel:+8801680800810" class="btn-main bg-btn3 lnk mt20"
+                >Make a Call <i class="fas fa-chevron-right fa-icon"></i
+                ><span class="circle"></span
+              ></a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h5>Contact Us</h5>
+              <ul class="footer-address-list ftr-details">
+                <li>
+                  <span><i class="fas fa-envelope"></i></span>
+                  <p>
+                    Email
+                    <span>
+                      <a href="mailto:techminate@gmail.com"
+                        >techminate@gmail.com</a
+                      ></span
+                    >
+                  </p>
+                </li>
+                <li>
+                  <span><i class="fas fa-phone-alt"></i></span>
+                  <p>
+                    Phone
+                    <span> <a href="tel:+4915208715741">+33677026669</a></span>
+                  </p>
+                </li>
+                <li>
+                  <span><i class="fas fa-map-marker-alt"></i></span>
+                  <p>Address <span>Paris, France.</span></p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <h5>Open Sourced</h5>
+              <ul class="footer-address-list link-hover">
+                <li>
+                  <a
+                    href="https://github.com/Techminate-Labs/Decentralized-Voting-Wallet"
+                    >D-Election</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Techminate-Labs/Shiopa-Frontend-Nuxt-JS"
+                    >Ecommerce</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/Techminate-Labs/TNBC-POS-Frontend"
+                    >Point Of Sale</a
+                  >
+                </li>
+                <li>
+                  <a href="#https://github.com/SazidAhmed/Django-TaskTracker"
+                    >Project Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/SazidAhmed/Laravel-Tenant-Management"
+                    >Tenant Management</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-row3">
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="footer-social-media-icons">
+                  <a href="#" target="blank"><i class="fab fa-facebook"></i></a>
+                  <a href="#" target="blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://github.com/Techminate-Labs" target="blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="#" target="blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" target="blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-">
+                  <p>Copyright &copy; 2021-2022 Techminate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End Footer-->
 
-	<!--Start Team-->
-	<section class="clients-section- bg-gradient15 pad-tb" id="team">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="common-heading ptag">
-						<span>We Are Awesome</span>
-						<h2>Core Team Members</h2>
-						<p class="mb0"></p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-sm-6">
-					<div class="full-image-card hover-scale">
-						<div class="image-div"><a href="#"><img src="images/team/nath.jpg" alt="team"
-									class="img-fluid" /></a></div>
-						<div class="info-text-block">
-							<h4><a href="#">NATHANAËL JAGENI</a></h4>
-							<p>Web Developer</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="full-image-card hover-scale">
-						<div class="image-div"><a href="#"><img src="images/team/sazid.jpg" alt="team"
-									class="img-fluid" /></a></div>
-						<div class="info-text-block">
-							<h4><a href="#">Sazid Ahmed</a></h4>
-							<p>Blockchain Developer</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="full-image-card hover-scale">
-						<div class="image-div"><a href="#"><img src="images/team/avatar1.png" alt="team"
-									class="img-fluid" /></a></div>
-						<div class="info-text-block">
-							<h4><a href="#">Oluwaseyifunmi Oyefeso</a></h4>
-							<p>Android Developer</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="full-image-card hover-scale">
-						<div class="image-div"><a href="#"><img src="images/team/nupur.jpg" alt="team"
-									class="img-fluid" /></a></div>
-						<div class="info-text-block">
-							<h4><a href="#">AFRIN SARKER</a></h4>
-							<p>Web Developer</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="full-image-card hover-scale">
-						<div class="image-div"><a href="#"><img src="images/team/laboni.jpg" alt="team"
-									class="img-fluid" /></a></div>
-						<div class="info-text-block">
-							<h4><a href="#">LABONI SARKER</a></h4>
-							<p>Lawyer</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="full-image-card hover-scale">
-						<div class="image-div"><a href="#"><img src="images/team/avatar2.png" alt="team"
-									class="img-fluid" /></a></div>
-						<div class="info-text-block">
-							<h4><a href="#">ALI AR REZA</a></h4>
-							<p>UI/UX & Graphic Desinger</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="full-image-card hover-scale">
-						<div class="image-div"><a href="#"><img src="images/team/tanvir.jpg" alt="team"
-									class="img-fluid" /></a></div>
-						<div class="info-text-block">
-							<h4><a href="#">TANVIR AHMED</a></h4>
-							<p>Regional Agent (Europe)</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="full-image-card hover-scale">
-						<div class="image-div"><a href="#"><img src="images/team/avatar3.png" alt="team"
-									class="img-fluid" /></a></div>
-						<div class="info-text-block">
-							<h4><a href="#">JANNAT</a></h4>
-							<p>Regional Agent (Australia)</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--End Team-->
-
-	<!--Start Contact-->
-	<section class="cta-area pad-tb" id="contact">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="common-heading">
-						<span>24/7 Support</span>
-						<h2>Our Agents</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row upset shape-numm">
-				<div class="col-lg-3 col-sm-6 shape-loc wow fadeInUp" data-wow-delay=".2s">
-					<div class="office-card">
-						<div class="office-text">
-							<h4>Europe</h4>
-							<h6>Tanvir Ahmed</h6>
-							<ul class="footer-address-list link-hover">
-								<li><a href="#">tanvirahmed289@gmail.com</a></li>
-								<li><a href="#">+4915208715741</a></li>
-								<li><a href="#">Kerckhoffstr131, 45144 Essen, Germany.</a></li>
-							</ul>
-							<a href="tel:+4915208715741" target="blank" class="btn-outline rount-btn"><i
-									class="fas fa-phone-alt"></i></a>
-							<a href="mailto:tanvirahmed289@gmail.com" target="blank" class="btn-outline rount-btn"><i
-									class="fas fa-envelope"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6 shape-loc wow fadeInUp" data-wow-delay=".4s">
-					<div class="office-card mb0">
-						<div class="office-text">
-							<h4>South America</h4>
-							<h6>NATHANAËL JAGENI</h6>
-							<ul class="footer-address-list link-hover">
-								<li><a href="#">hello@nathanaeljageni.fr</a></li>
-								<li><a href="#">+33677026669</a></li>
-								<li><a href="#">montevideo, Uruguay.</a></li>
-							</ul>
-							<a href="tel:+33677026669" target="blank" class="btn-outline rount-btn"><i
-									class="fas fa-phone-alt"></i></a>
-							<a href="mailto:hello@nathanaeljageni.fr" target="blank" class="btn-outline rount-btn"><i
-									class="fas fa-envelope"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6 shape-loc wow fadeInUp" data-wow-delay=".6s">
-					<div class="office-card">
-						<div class="office-text">
-							<h4>Asia</h4>
-							<h6>Sazid Ahmed</h6>
-							<ul class="footer-address-list link-hover">
-								<li><a href="#">sazidahmed.official@gmail.com</a></li>
-								<li><a href="#">+8801680800810</a></li>
-								<li><a href="#">Dhaka, Bangladesh, 1230.</a></li>
-							</ul>
-							<a href="tel:+8801680800810" target="blank" class="btn-outline rount-btn"><i
-									class="fas fa-phone-alt"></i></a>
-							<a href="mailto:sazidahmed.official@gmail.com" target="blank"
-								class="btn-outline rount-btn"><i class="fas fa-envelope"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6 shape-loc wow fadeInUp" data-wow-delay=".8s">
-					<div class="office-card">
-						<div class="office-text">
-							<h4>Africa</h4>
-							<h6>Oluwaseyifunmi Oyefeso</h6>
-							<ul class="footer-address-list link-hover">
-								<li><a href="#">gistkiosk@gmail.com</a></li>
-								<li><a href="#">+2349070933598</a></li>
-								<li><a href="#">Lagos, Nigeria.</a></li>
-							</ul>
-							<a href="tel:+2349070933598" target="blank" class="btn-outline rount-btn"><i
-									class="fas fa-phone-alt"></i></a>
-							<a href="mailto:gistkiosk@gmail.com" target="blank" class="btn-outline rount-btn"><i
-									class="fas fa-envelope"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="shape shape-a1"><img src="images/shape/shape-3.svg" alt="shape"></div>
-		<div class="shape shape-a2"><img src="images/shape/shape-4.svg" alt="shape"></div>
-		<div class="shape shape-a3"><img src="images/shape/shape-13.svg" alt="shape"></div>
-		<div class="shape shape-a4"><img src="images/shape/shape-11.svg" alt="shape"></div>
-	</section>
-	<!--End Contact-->
-
-	<!--Start Footer-->
-	<footer>
-		<div class="footer-row2">
-			<div class="container">
-				<div class="row justify-content-between">
-					<div class="col-lg-3 col-sm-12  ftr-brand-pp">
-						<a class="navbar-brand mt30 mb25" href="#"> <img style="height: 30px; width:200px"
-								src="images/logo.png" alt="Logo" width="100" /></a>
-						<p>
-							Inspired to run your business using Latest technologies ?
-						</p>
-						<a href="tel:+8801680800810" class="btn-main bg-btn3 lnk mt20">Make a Call <i
-								class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
-					</div>
-					<div class="col-lg-3 col-sm-6">
-						<h5>Contact Us</h5>
-						<ul class="footer-address-list ftr-details">
-							<li>
-								<span><i class="fas fa-envelope"></i></span>
-								<p>Email <span> <a href="mailto:techminate@gmail.com">techminate@gmail.com</a></span>
-								</p>
-							</li>
-							<li>
-								<span><i class="fas fa-phone-alt"></i></span>
-								<p>Phone <span> <a href="tel:+4915208715741">+33677026669</a></span></p>
-							</li>
-							<li>
-								<span><i class="fas fa-map-marker-alt"></i></span>
-								<p>Address <span>montevideo, Uruguay.</span></p>
-							</li>
-						</ul>
-					</div>
-					<div class="col-lg-2 col-sm-6">
-						<h5>Open Sourced</h5>
-						<ul class="footer-address-list link-hover">
-							<li><a href="https://github.com/Techminate-Labs/Decentralized-Voting-Wallet">D-Election</a></li>
-							<li><a href="https://github.com/Techminate-Labs/Shiopa-Frontend-Nuxt-JS">Ecommerce</a></li>
-							<li><a href="https://github.com/Techminate-Labs/TNBC-POS-Frontend">Point Of Sale</a></li>
-							<li><a href="#https://github.com/SazidAhmed/Django-TaskTracker">Project Management</a></li>
-							<li><a href="https://github.com/SazidAhmed/Laravel-Tenant-Management">Tenant Management</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer-row3">
-			<div class="copyright">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="footer-social-media-icons">
-								<a href="#" target="blank"><i class="fab fa-facebook"></i></a>
-								<a href="#" target="blank"><i class="fab fa-twitter"></i></a>
-								<a href="https://github.com/Techminate-Labs" target="blank"><i class="fab fa-github"></i></a>
-								<a href="#" target="blank"><i class="fab fa-linkedin"></i></a>
-								<a href="#" target="blank"><i class="fab fa-youtube"></i></a>
-							</div>
-							<div class="footer-">
-								<p>Copyright &copy; 2021-2022 Techminate</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!--End Footer-->
-
-	<!-- js placed at the end of the document so the pages load faster -->
-	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/plugin.min.js"></script>
-	<script src="js/preloader.js"></script>
-	<!--common script file-->
-	<script src="js/main.js"></script>
-</body>
-
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/plugin.min.js"></script>
+    <script src="js/preloader.js"></script>
+    <!--common script file-->
+    <script src="js/main.js"></script>
+  </body>
 </html>
